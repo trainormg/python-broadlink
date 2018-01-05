@@ -1,2 +1,5 @@
 *.pyc
 broadlink.egg-info/
+dist/
+*.egg-info/
+__pycache__/

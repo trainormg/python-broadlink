@@ -205,11 +205,11 @@ class device:
         payload = self.decrypt(response[0x38:])
 
         if not payload:
-         return False
+            return False
 
         key = payload[0x04:0x14]
         if len(key) % 16 != 0:
-         return False
+            return False
 
         self.id = payload[0x00:0x04]
         self.key = key

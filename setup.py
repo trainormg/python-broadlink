@@ -15,14 +15,14 @@ except ImportError as e:
 version = 0.5
 
 setup(
-    name='broadlink',
+    name='python3-broadlink',
     version=0.5,
     author='Matthew Garrett',
     author_email='mjg59@srcf.ucam.org',
     url='http://github.com/mjg59/python-broadlink',
     packages=find_packages(),
     scripts=[],
-    install_requires=dynamic_requires,
+    install_requires=['pycryptodome==3.4.6'],
     description='Python API for controlling Broadlink IR controllers',
     classifiers=[
         'Development Status :: 4 - Beta',
